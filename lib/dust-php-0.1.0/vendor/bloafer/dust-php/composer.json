@@ -1,0 +1,25 @@
+{
+    "name": "bloafer/dust-php",
+    "description": "A templating engine for PHP based on Dust JS",
+    "keywords": ["templating", "dust"],
+    "homepage": "https://bloafer.github.io/dust-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kerry James"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": { "Dust": "src/" }
+    },
+    "replace": {
+        "dust-php/dust-php": "0.1.0"
+    }
+}

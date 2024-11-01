@@ -1,0 +1,50 @@
+[
+    {
+        "name": "bloafer/dust-php",
+        "version": "0.1.7",
+        "version_normalized": "0.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Bloafer/dust-php.git",
+            "reference": "ed3d35a3687fd20e6f797107033779d3e291ef52"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Bloafer/dust-php/zipball/ed3d35a3687fd20e6f797107033779d3e291ef52",
+            "reference": "ed3d35a3687fd20e6f797107033779d3e291ef52",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "replace": {
+            "dust-php/dust-php": "0.1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2017-03-31T12:03:22+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Dust": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kerry James"
+            }
+        ],
+        "description": "A templating engine for PHP based on Dust JS",
+        "homepage": "https://bloafer.github.io/dust-php",
+        "keywords": [
+            "dust",
+            "templating"
+        ]
+    }
+]

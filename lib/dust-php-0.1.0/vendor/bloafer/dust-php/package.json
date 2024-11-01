@@ -1,0 +1,22 @@
+{
+    "name": "dust-php",
+    "author": "Kerry James",
+    "homepage": "https://github.com/Bloafer/dust-php",
+    "version": "0.1.7",
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://raw.githubusercontent.com/Bloafer/dust-php/master/LICENSE"
+    }],
+    "description": "Dust is a PHP templating language modelled off of dustjs",
+    "keywords": ["php", "dust", "template", "dustjs"],
+    "bugs": {
+        "url": "https://github.com/Bloafer/dust-php/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bloafer/dust-php.git"
+    },
+    "replace": {
+        "dust-php/dust-php": "0.1.0"
+    }
+}

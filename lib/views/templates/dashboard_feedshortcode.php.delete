@@ -1,0 +1,11 @@
+<h3>
+	<?php echo $nxf_dashboard_model->feed->feed_name ?> Shortcode:
+</h3>
+
+<p>
+	<code>[transform_feed feed="<?php echo $nxf_dashboard_model->feed->ID ?>"]</code>
+</p>
+
+<p>
+	Copy the above shortcode (including the "[" and "]") and paste into any post/page to display this feed. To see debug information add ' debug="1"' after 'feed="<?php echo $nxf_dashboard_model->feed->ID ?>"'.
+<p>

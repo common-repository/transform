@@ -1,0 +1,34 @@
+<div style="height: 200px; overflow-y: auto; overflow-x: no;">
+	<div id="nxf_feed_type_display_list">
+	<?php
+		foreach ( $nxf_dashboard_model->displays as $display ) {
+	?>
+			<p>
+				<strong><?php echo $display->display_name ?></strong><br/>
+				<?php echo $display->display_desc ?><br/>
+				<a href="javascript:jQuery('#nxf_feed_type_display_list').hide();jQuery('#nxf_feed_type_display_<?php echo $display->ID ?>').show();">Edit</a> | <a href='javascript:alert(\'some day\');'>Delete</a>
+			<p>
+	<?php
+		}
+	?>
+	</div>
+	
+	<?php
+		foreach ( $nxf_dashboard_model->displays as $display ) {
+	?>
+			<div id="nxf_feed_type_display_<?php echo $display->ID ?>" style="display: none;">
+				<table>
+					<tr>
+						<td>Name:</td>
+						<td>
+							<input name="display_name" value="<?php echo $display->display_name ?>" size="30">
+						</td>
+					</tr>
+				</table>
+				<p>This is display <?php echo $display->display_name ?><p>
+				<input type="button" value="Cancel" onclick="javascript:jQuery('#nxf_feed_type_display_<?php echo $display->ID ?>').hide();jQuery('#nxf_feed_type_display_list').show();" />
+			</div>
+	<?php
+		}
+	?>
+</div>

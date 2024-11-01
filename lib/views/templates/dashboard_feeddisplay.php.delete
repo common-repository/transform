@@ -1,0 +1,15 @@
+<p><?php printf( __( 'Feed display for %s', 'nxf-transform' ), $nxf_dashboard_model->feed->feed_name ) ?>:</p>
+
+<form name="nxf-newfeed" method="post">
+	<select name="feed_display">
+	
+	<?php
+		foreach ( $nxf_dashboard_model->displays as $display ) {
+			echo "<option value='" . $display->feed_type_id . "'";
+			if ( $nxf_dashboard_model->feed->ID == $display->feed_type_id ) { echo " selected='selected'"; }
+			echo ">" . $display->display_name . "</option>";
+		}
+	?>
+	
+	</select>
+</form>
